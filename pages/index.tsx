@@ -1,5 +1,5 @@
-function HomePage() {
+function LoginPage() {
   return <p>Hi</p>;
 }
 
-export default HomePage;
+export default LoginPage;
