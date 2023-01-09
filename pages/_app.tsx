@@ -11,7 +11,10 @@ export default function App({ Component, pageProps }: AppProps) {
     <Fragment>
       <Head>
         <title>MoneyChart</title>
-        <meta name="description" content="Visualising data through charts" />
+        <meta
+          name="description"
+          content="Bookkeeping made easy through charts"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
