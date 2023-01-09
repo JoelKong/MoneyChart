@@ -1,5 +1,5 @@
 function FilteredTransactionsPage() {
-  return <p>Hiasd</p>;
+  return <p>Hiasvvd</p>;
 }
 
 export default FilteredTransactionsPage;
