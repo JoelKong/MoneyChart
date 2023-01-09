@@ -1,7 +1,9 @@
-import Head from "next/head";
-import "../styles/globals.css";
-
+//Type Imports
 import type { AppProps } from "next/app";
+
+//Imports
+import "../styles/globals.css";
+import Head from "next/head";
 import { Fragment } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
