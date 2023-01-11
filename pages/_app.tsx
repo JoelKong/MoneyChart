@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>MoneyChart</title>
         <meta
           name="description"
-          content="Bookkeeping made easy through charts"
+          content="Tracking Finances has never been easier"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
