@@ -1,16 +1,14 @@
-import Image from "next/image";
+import Hero from "../components/landingpage/Hero";
+import Bookkeeping from "../components/landingpage/Bookkeeping";
+import TransactionManagement from "../components/landingpage/TransactionManagement";
 
 function LoginPage() {
   return (
-    <div>
-      <p>hi</p>
-      <Image
-        src="/images/moneychart-brand.png"
-        alt="MoneyChart Logo"
-        width={500}
-        height={200}
-      />
-    </div>
+    <main className="background">
+      <Hero />
+      <Bookkeeping />
+      <TransactionManagement />
+    </main>
   );
 }
 
