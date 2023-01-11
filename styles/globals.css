@@ -6,13 +6,14 @@
   margin: 0;
 }
 
-p {
+p,
+h1 {
   color: #fafafa;
 }
 
 .background {
   background-image: linear-gradient(130deg, #2c3e50, #000000);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* @media screen and (prefers-color-scheme: dark) {

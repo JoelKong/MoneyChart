@@ -1,0 +1,19 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+  flex-direction: column;
+}
+
+.slogan {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  width: 30rem;
+}
