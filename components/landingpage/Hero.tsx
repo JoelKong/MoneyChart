@@ -1,7 +1,16 @@
+import { useRef } from "react";
+import { useHover } from "usehooks-ts";
 import Image from "next/image";
 import classes from "./hero.module.css";
+import { MdOutlineLogin } from "react-icons/md";
+import { IoMdArrowDropdown } from "react-icons/io";
+// BiDownArrow
+function Hero(): JSX.Element {
+  const loginRef = useRef<HTMLButtonElement>(null);
+  const detailRef = useRef<HTMLButtonElement>(null);
+  const isLoginHovered = useHover<HTMLButtonElement>(loginRef);
+  const isDetailHovered = useHover<HTMLButtonElement>(detailRef);
 
-function Hero() {
   return (
     <div className={classes.center}>
       <Image
@@ -14,8 +23,18 @@ function Hero() {
         Tracking Finances Has Never Been Easier
       </h1>
       <div className={classes.actions}>
-        <button>Log In</button>
-        <button>More Details</button>
+        <button className={classes.button} ref={loginRef}>
+          Log In
+          {isLoginHovered && (
+            <MdOutlineLogin className={classes.loginbuttonicon} />
+          )}
+        </button>
+        <button className={classes.button} ref={detailRef}>
+          More Details
+          {isDetailHovered && (
+            <IoMdArrowDropdown className={classes.detailbuttonicon} />
+          )}
+        </button>
       </div>
     </div>
   );

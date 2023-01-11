@@ -1,5 +1,5 @@
 function TransactionManagement() {
-  return <p>s</p>;
+  return <p></p>;
 }
 
 export default TransactionManagement;
