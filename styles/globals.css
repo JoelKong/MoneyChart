@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 p,
 h1 {
   color: #fafafa;
@@ -13,7 +17,26 @@ h1 {
 
 .background {
   background-image: linear-gradient(130deg, #2c3e50, #000000);
+  min-width: 98vw;
   min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(107, 106, 106);
 }
 
 /* @media screen and (prefers-color-scheme: dark) {
