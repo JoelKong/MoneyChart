@@ -1,5 +1,11 @@
+import classes from "./bookkeeping.module.css";
+
 function Bookkeeping() {
-  return <p></p>;
+  return (
+    <article className={classes.bookkeeping}>
+      <p>sdfsd</p>
+    </article>
+  );
 }
 
 export default Bookkeeping;
