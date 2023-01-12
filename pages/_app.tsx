@@ -7,6 +7,12 @@ import Head from "next/head";
 import { Fragment } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
+  if (typeof window !== "undefined") {
+    window.onbeforeunload = () => {
+      window.scrollTo(0, 0);
+    };
+  }
+
   return (
     <Fragment>
       <Head>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import classes from "./hero.module.css";
 import { MdOutlineLogin } from "react-icons/md";
 import { IoMdArrowDropdown } from "react-icons/io";
-// BiDownArrow
+
 function Hero(): JSX.Element {
   const loginRef = useRef<HTMLButtonElement>(null);
   const detailRef = useRef<HTMLButtonElement>(null);
