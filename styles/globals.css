@@ -19,6 +19,7 @@ h1 {
   background-image: linear-gradient(130deg, #2c3e50, #000000);
   min-width: 98vw;
   min-height: 100vh;
+  height: 2000px;
 }
 
 ::-webkit-scrollbar {
