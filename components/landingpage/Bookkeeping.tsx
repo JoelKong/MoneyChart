@@ -36,10 +36,10 @@ function Bookkeeping({ samplePieData }: PieChartProps) {
           <div>
             <h2>Bookkeeping</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi nam
-              ipsa, earum corrupti explicabo odio sint quis odit? Reiciendis
-              odit, fuga deleniti repellat rem nemo explicabo eligendi ullam
-              quae culpa?
+              Visualise your expenses easily through MoneyChart. We deliver
+              charts which are categorised based off your transactions for your
+              needs. Keeping track of your spending would never again be a
+              hassle when you sign up with us.
             </p>
           </div>
         </article>
