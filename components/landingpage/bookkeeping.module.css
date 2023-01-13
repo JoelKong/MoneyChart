@@ -1,6 +1,5 @@
 .bookkeeping {
   display: flex;
-  flex-wrap: wrap;
   width: 99vw;
   height: 500px;
   margin-top: 10rem;
@@ -8,11 +7,12 @@
 }
 
 .chart {
-  width: 35vw;
+  width: 410px;
+  height: 410px;
 }
 
 .bookkeepingarticle {
-  width: 30vw;
+  width: 30%;
 }
 
 .bookkeepingtitle {
@@ -24,4 +24,26 @@
   padding-top: 1rem;
   font-size: 1.5rem;
   line-height: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .bookkeeping {
+    flex-direction: column;
+  }
+  .chart {
+    align-self: center;
+  }
+  .bookkeepingarticle {
+    width: 50vw;
+    padding-top: 4rem;
+    padding-left: 1.3rem;
+  }
+  .bookkeepingtitle {
+    width: 90vw;
+  }
+  .bookkeepingbody {
+    width: 90vw;
+    align-self: flex-start;
+    text-align: left;
+  }
 }
