@@ -8,18 +8,15 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(130deg, #2c3e50, #000000);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 2000px;
 }
 
 p,
 h1 {
   color: #fafafa;
-}
-
-.background {
-  background-image: linear-gradient(130deg, #2c3e50, #000000);
-  min-width: 99vw;
-  min-height: 100vh;
-  height: 2000px;
 }
 
 ::-webkit-scrollbar {

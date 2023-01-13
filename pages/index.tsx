@@ -5,7 +5,7 @@ import { samplePieData } from "../utils/charts/samplechart";
 
 function LoginPage() {
   return (
-    <main className="background">
+    <main>
       <Hero />
       <Bookkeeping samplePieData={samplePieData} />
       <TransactionManagement />
