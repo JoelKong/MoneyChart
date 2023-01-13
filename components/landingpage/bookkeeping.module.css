@@ -35,8 +35,8 @@
   }
   .bookkeepingarticle {
     width: 50vw;
-    padding-top: 4rem;
-    padding-left: 1.3rem;
+    margin-top: 4rem;
+    margin-left: 1.3rem;
   }
   .bookkeepingtitle {
     width: 90vw;
@@ -53,6 +53,6 @@
     margin-left: 5rem;
   }
   .bookkeepingarticle {
-    padding-left: 2rem;
+    margin-left: 2rem;
   }
 }

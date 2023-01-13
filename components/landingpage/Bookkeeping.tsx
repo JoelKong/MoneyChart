@@ -30,7 +30,7 @@ function Bookkeeping({ samplePieData }: PieChartProps) {
     return (
       <section className={classes.bookkeeping}>
         <div className={classes.chart}>
-          <Pie data={samplePieData} />
+          <Pie data={samplePieData} width={410} height={410} />
         </div>
         <article className={classes.bookkeepingarticle}>
           <div>
