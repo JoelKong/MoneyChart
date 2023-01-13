@@ -18,6 +18,7 @@ function Hero(): JSX.Element {
         alt="MoneyChart Logo"
         width={500}
         height={200}
+        priority
       />
       <h1 className={classes.slogan}>
         Tracking Finances Has Never Been Easier

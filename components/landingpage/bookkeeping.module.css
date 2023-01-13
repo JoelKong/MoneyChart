@@ -47,3 +47,12 @@
     text-align: left;
   }
 }
+
+@media (max-width: 500px) {
+  .chart {
+    margin-left: 5rem;
+  }
+  .bookkeepingarticle {
+    padding-left: 2rem;
+  }
+}

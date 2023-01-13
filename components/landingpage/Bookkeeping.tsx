@@ -11,7 +11,7 @@ function Bookkeeping({ samplePieData }: PieChartProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const threshold: number = window.innerHeight * 0.2;
+      const threshold: number = window.innerHeight * 0.4;
       if (window.pageYOffset > threshold) {
         setIsComponentMounted(true);
       }
@@ -30,7 +30,7 @@ function Bookkeeping({ samplePieData }: PieChartProps) {
     return (
       <section className={classes.bookkeeping}>
         <div className={classes.chart}>
-          <Pie data={samplePieData} width={410} height={410} />
+          <Pie data={samplePieData} />
         </div>
         <article className={classes.bookkeepingarticle}>
           <div>
