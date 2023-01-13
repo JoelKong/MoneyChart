@@ -1,6 +1,7 @@
 // Pie Chart
+import { SamplePieChart } from "../../interfaces/charts/samplepiechart";
 
-export const data = {
+export const samplePieData: SamplePieChart = {
   labels: ["Shopping", "Entertainment", "Meal", "Transport"],
   datasets: [
     {

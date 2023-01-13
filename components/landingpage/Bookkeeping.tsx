@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
-import { data } from "../../utils/charts/samplechart";
 import classes from "./bookkeeping.module.css";
+import { PieChartProps } from "../../interfaces/charts/samplepiechart";
 
-function Bookkeeping() {
+function Bookkeeping({ samplePieData }: PieChartProps) {
   const [isComponentMounted, setIsComponentMounted] = useState<boolean>(false);
 
   ChartJS.register(ArcElement, Tooltip, Legend);
@@ -30,7 +30,7 @@ function Bookkeeping() {
     return (
       <section className={classes.bookkeeping}>
         <div className={classes.chart}>
-          <Pie data={data} options={{ maintainAspectRatio: false }} />
+          <Pie data={samplePieData} />
         </div>
         <article className={classes.bookkeepingarticle}>
           <div>
