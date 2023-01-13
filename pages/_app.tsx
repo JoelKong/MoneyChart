@@ -19,14 +19,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>MoneyChart</title>
         <meta
           name="description"
-          content="Tracking Finances has never been easier"
+          content="Keeping Track of Finances has never been easier"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <script
-          type="text/javascript"
-          src="https://www.gstatic.com/charts/loader.js"
-        ></script>
       </Head>
       <Component {...pageProps} />
     </Fragment>
