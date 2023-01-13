@@ -17,7 +17,7 @@ h1 {
 
 .background {
   background-image: linear-gradient(130deg, #2c3e50, #000000);
-  min-width: 98vw;
+  min-width: 99vw;
   min-height: 100vh;
   height: 2000px;
 }

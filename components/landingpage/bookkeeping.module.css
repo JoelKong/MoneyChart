@@ -1,7 +1,15 @@
 .bookkeeping {
   display: flex;
-  overflow-x: hidden;
   width: 99vw;
   height: 600px;
   margin-top: 10rem;
+  justify-content: space-evenly;
+}
+
+.chart {
+  width: 50vw;
+}
+
+.bookkeepingarticle {
+  width: 30vw;
 }

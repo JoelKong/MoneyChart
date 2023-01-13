@@ -1,8 +1,13 @@
 import { useState, useEffect } from "react";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Pie } from "react-chartjs-2";
+import { data } from "../../utils/charts/samplechart";
 import classes from "./bookkeeping.module.css";
 
 function Bookkeeping() {
   const [isComponentMounted, setIsComponentMounted] = useState<boolean>(false);
+
+  ChartJS.register(ArcElement, Tooltip, Legend);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +29,10 @@ function Bookkeeping() {
   } else
     return (
       <section className={classes.bookkeeping}>
-        <div>PIE CHART</div>
-        <article>
+        <div className={classes.chart}>
+          <Pie data={data} options={{ maintainAspectRatio: false }} />
+        </div>
+        <article className={classes.bookkeepingarticle}>
           <div>
             <h2>Bookkeeping</h2>
             <p>
