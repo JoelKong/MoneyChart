@@ -1,5 +1,6 @@
 import Image from "next/image";
 import classes from "./header.module.css";
+import handleLogIn from "../../utils/login/login";
 
 function Header(): JSX.Element {
   function handleIconClick() {
@@ -17,7 +18,9 @@ function Header(): JSX.Element {
         onClick={handleIconClick}
       />
       <div className={classes.headerdiv}>
-        <button className={classes.login}>Log In</button>
+        <button className={classes.login} onClick={handleLogIn}>
+          Log In
+        </button>
       </div>
     </header>
   );

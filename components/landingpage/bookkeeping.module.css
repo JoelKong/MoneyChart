@@ -2,7 +2,7 @@
   display: flex;
   width: 99vw;
   height: 500px;
-  margin-top: 10rem;
+  margin-top: 8rem;
   justify-content: space-evenly;
   animation: scroll 1300ms 0s 1 forwards;
 }
@@ -61,10 +61,10 @@
 @keyframes scroll {
   0% {
     opacity: 0;
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
   100% {
     opacity: 1;
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 }

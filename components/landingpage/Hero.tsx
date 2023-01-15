@@ -4,6 +4,7 @@ import Image from "next/image";
 import classes from "./hero.module.css";
 import { MdOutlineLogin } from "react-icons/md";
 import { IoMdArrowDropdown } from "react-icons/io";
+import handleLogIn from "../../utils/login/login";
 
 function Hero(): JSX.Element {
   const loginRef = useRef<HTMLButtonElement>(null);
@@ -28,7 +29,7 @@ function Hero(): JSX.Element {
         Tracking Finances Has Never Been Easier
       </h1>
       <div className={classes.actions}>
-        <button className={classes.button} ref={loginRef}>
+        <button className={classes.button} ref={loginRef} onClick={handleLogIn}>
           Log In
           {isLoginHovered && (
             <MdOutlineLogin className={classes.loginbuttonicon} />

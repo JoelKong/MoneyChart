@@ -11,7 +11,7 @@ function Bookkeeping({ samplePieData }: PieChartProps): JSX.Element | null {
 
   useEffect(() => {
     const handleScroll = (): void => {
-      const threshold: number = window.innerHeight * 0.4;
+      const threshold: number = window.innerHeight * 0.3;
       if (window.scrollY > threshold) {
         setIsComponentMounted(true);
       }
