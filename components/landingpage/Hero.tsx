@@ -11,7 +11,7 @@ function Hero(): JSX.Element {
   const isLoginHovered = useHover<HTMLButtonElement>(loginRef);
   const isDetailHovered = useHover<HTMLButtonElement>(detailRef);
 
-  function moreDetails() {
+  function moreDetails(): void {
     window.scrollTo({ top: 650, behavior: "smooth" });
   }
 

@@ -4,7 +4,7 @@ import { Pie } from "react-chartjs-2";
 import { PieChartProps } from "../../interfaces/charts/samplepiechart";
 import classes from "./bookkeeping.module.css";
 
-function Bookkeeping({ samplePieData }: PieChartProps) {
+function Bookkeeping({ samplePieData }: PieChartProps): JSX.Element | null {
   const [isComponentMounted, setIsComponentMounted] = useState<boolean>(false);
 
   ChartJS.register(ArcElement, Tooltip, Legend);
