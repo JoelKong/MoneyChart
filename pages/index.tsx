@@ -1,4 +1,5 @@
 import Header from "../components/landingpage/Header";
+import Footer from "../components/landingpage/footer";
 import Hero from "../components/landingpage/Hero";
 import Bookkeeping from "../components/landingpage/Bookkeeping";
 import TransactionManagement from "../components/landingpage/TransactionManagement";
@@ -11,6 +12,7 @@ function LoginPage() {
       <Hero />
       <Bookkeeping samplePieData={samplePieData} />
       <TransactionManagement />
+      <Footer />
     </main>
   );
 }
