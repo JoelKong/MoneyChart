@@ -11,6 +11,10 @@ function Hero(): JSX.Element {
   const isLoginHovered = useHover<HTMLButtonElement>(loginRef);
   const isDetailHovered = useHover<HTMLButtonElement>(detailRef);
 
+  function moreDetails() {
+    window.scrollTo({ top: 650, behavior: "smooth" });
+  }
+
   return (
     <div className={classes.center}>
       <Image
@@ -30,7 +34,11 @@ function Hero(): JSX.Element {
             <MdOutlineLogin className={classes.loginbuttonicon} />
           )}
         </button>
-        <button className={classes.button} ref={detailRef}>
+        <button
+          className={classes.button}
+          ref={detailRef}
+          onClick={moreDetails}
+        >
           More Details
           {isDetailHovered && (
             <IoMdArrowDropdown className={classes.detailbuttonicon} />
