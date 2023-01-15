@@ -10,10 +10,13 @@ function Bookkeeping({ samplePieData }: PieChartProps) {
   ChartJS.register(ArcElement, Tooltip, Legend);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (): void => {
       const threshold: number = window.innerHeight * 0.4;
-      if (window.pageYOffset > threshold) {
+      if (window.scrollY > threshold) {
         setIsComponentMounted(true);
+      }
+      if (window.scrollY < 100) {
+        setIsComponentMounted(false);
       }
     };
 
