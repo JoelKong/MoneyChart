@@ -1,3 +1,5 @@
+import Header from "../../components/global/Header";
+import Charts from "../../components/homepage/Charts";
 import Head from "next/head";
 import { Fragment } from "react";
 
@@ -10,9 +12,8 @@ function HomePage() {
           content="Dashboard for the Tracking of Expenses"
         />
       </Head>
-      <main>
-        <div>pp</div>
-      </main>
+      <Header />
+      <Charts />
     </Fragment>
   );
 }
