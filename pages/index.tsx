@@ -1,6 +1,12 @@
-import Header from "../components/landingpage/Header";
+import dynamic from "next/dynamic";
+import Header from "../components/global/Header";
 import Hero from "../components/landingpage/Hero";
-import Bookkeeping from "../components/landingpage/Bookkeeping";
+const DynamicBookkeeping = dynamic(
+  () => import("../components/landingpage/Bookkeeping"),
+  {
+    loading: (): any => "Loading...",
+  }
+);
 import TransactionManagement from "../components/landingpage/TransactionManagement";
 import { samplePieData } from "../utils/charts/samplechart";
 
@@ -9,7 +15,7 @@ function LoginPage() {
     <main>
       <Header />
       <Hero />
-      <Bookkeeping samplePieData={samplePieData} />
+      <DynamicBookkeeping samplePieData={samplePieData} />
       <TransactionManagement />
     </main>
   );
