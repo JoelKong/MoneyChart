@@ -4,7 +4,7 @@ import Hero from "../components/landingpage/Hero";
 const DynamicBookkeeping = dynamic(
   () => import("../components/landingpage/Bookkeeping"),
   {
-    loading: (): any => "Loading...",
+    loading: (): JSX.Element => <p>Loading...</p>,
   }
 );
 import TransactionManagement from "../components/landingpage/TransactionManagement";
