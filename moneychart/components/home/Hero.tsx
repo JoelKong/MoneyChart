@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { BiLogIn } from "react-icons/bi";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 export default function Hero(): JSX.Element {
   return (
@@ -19,11 +21,13 @@ export default function Hero(): JSX.Element {
           Tracking Finances have never been easier
         </div>
         <div className="flex flex-row justify-evenly w-full pt-8">
-          <button className="w-1/4 h-8 rounded-lg bg-blue-400 hover:bg-blue-500">
-            Log In
+          <button className="w-1/4 h-10 rounded-lg bg-blue-400 hover:bg-blue-500 flex justify-center items-center">
+            <p className="pr-2 pb-[0.1rem]">Log In</p>
+            <BiLogIn />
           </button>
-          <button className="w-1/4 h-8 rounded-lg bg-blue-400 hover:bg-blue-500">
-            More details
+          <button className="w-1/4 h-10 rounded-lg bg-blue-400 hover:bg-blue-500 flex justify-center items-center">
+            <p className="pr-2 pb-[0.1rem]">More Details</p>
+            <RiArrowRightSLine />
           </button>
         </div>
       </div>
