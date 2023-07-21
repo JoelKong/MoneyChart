@@ -5,8 +5,8 @@ import { RiArrowRightSLine } from "react-icons/ri";
 export default function Hero(): JSX.Element {
   return (
     <section className="w-full h-full flex justify-center items-center">
-      <div className="w-2/4 h-2/4 flex flex-col justify-center items-center">
-        <div className="w-full flex items-center justify-center text-6xl">
+      <div className="w-2/4 h-2/4 flex flex-col justify-center items-center flex-grow">
+        <div className="w-full flex items-center justify-center sm:text-6xl text-4xl">
           <Image
             src="/moneychartt.png"
             alt="moneychart"
@@ -17,15 +17,15 @@ export default function Hero(): JSX.Element {
             MoneyChart
           </span>
         </div>
-        <div className="text-center tracking-wide pt-2 font-medium text-2xl">
+        <div className="text-center tracking-wide pt-2 font-medium sm:text-2xl text-md">
           Tracking Finances have never been easier
         </div>
-        <div className="flex flex-row justify-evenly w-full pt-8">
-          <button className="w-1/4 h-10 rounded-lg bg-blue-400 hover:bg-blue-500 flex justify-center items-center">
+        <div className="flex flex-row justify-evenly sm:w-2/4 w-full pt-8">
+          <button className="sm:w-48 w-32 h-10 rounded-lg bg-blue-400 hover:bg-blue-500 flex justify-center items-center">
             <p className="pr-2 pb-[0.1rem]">Log In</p>
             <BiLogIn />
           </button>
-          <button className="w-1/4 h-10 rounded-lg bg-blue-400 hover:bg-blue-500 flex justify-center items-center">
+          <button className="sm:w-48 w-32 h-10 rounded-lg bg-blue-400 hover:bg-blue-500 flex justify-center items-center">
             <p className="pr-2 pb-[0.1rem]">More Details</p>
             <RiArrowRightSLine />
           </button>
