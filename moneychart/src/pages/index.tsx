@@ -17,8 +17,9 @@ export default function Home() {
   }
 
   function login() {
+    // iw036, 123456
     router.push(
-      "https://www.dbs.com/sandbox/api/sg/v1/oauth/authorize?client_id=c871240c-d971-4b74-9b13-4be5b3a27bd1&redirect_uri=http://localhost:3000/dashboard&scope=Read&response_type=code&state=0399"
+      "https://www.dbs.com/sandbox/api/sg/v1/oauth/authorize?client_id=c871240c-d971-4b74-9b13-4be5b3a27bd1&redirect_uri=http://localhost:3000/api/accesstoken&scope=Read&response_type=code&state=0399"
     );
     return;
   }
