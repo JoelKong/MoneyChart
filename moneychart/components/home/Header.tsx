@@ -1,10 +1,6 @@
 import Image from "next/image";
 
-export default function Header(): JSX.Element {
-  function login() {
-    console.log("g");
-  }
-
+export default function Header({ login }: any): JSX.Element {
   return (
     <header className="fixed flex w-full justify-between items-center pl-4 pt-2 z-10">
       <Image

@@ -2,8 +2,10 @@ import Hero from "../../components/home/Hero";
 import Header from "../../components/home/Header";
 import Bookkeeping from "../../components/home/Bookkeeping";
 import { useRef } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
   const moreDetailsRef = useRef<any>();
 
   function moreDetails(): any {
@@ -14,6 +16,13 @@ export default function Home() {
     });
   }
 
+  function login() {
+    router.push(
+      "https://www.dbs.com/sandbox/api/sg/v1/oauth/authorize?client_id=c871240c-d971-4b74-9b13-4be5b3a27bd1&redirect_uri=http://localhost:3000/dashboard&scope=Read&response_type=code&state=0399"
+    );
+    return;
+  }
+
   return (
     <>
       <main
@@ -21,8 +30,8 @@ export default function Home() {
         ref={moreDetailsRef}
       >
         <div className="snap-center w-full h-full">
-          <Header />
-          <Hero moreDetails={moreDetails} />
+          <Header login={login} />
+          <Hero moreDetails={moreDetails} login={login} />
         </div>
         <div className="snap-center w-full h-full">
           <Bookkeeping />
