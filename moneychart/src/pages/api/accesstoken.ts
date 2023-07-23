@@ -23,7 +23,7 @@ async function handler(req: any, res: any) {
 
   let parsed = await response.json();
   res.redirect(
-    `http://localhost:3000/dashboard?access_token=${parsed.access_token}`
+    `http://localhost:3000/dashboard?access_token=${parsed.access_token}&party_id=${parsed.party_id}`
   );
 }
 

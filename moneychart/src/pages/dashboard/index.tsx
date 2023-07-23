@@ -1,12 +1,13 @@
 import Hero from "../../../components/home/Hero";
 import Header from "../../../components/home/Header";
 import Bookkeeping from "../../../components/home/Bookkeeping";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-export default function Home({ accessToken }: any) {
+export default function Home() {
   const router = useRouter();
   const moreDetailsRef = useRef<any>();
+  const [monthlyDebitAndCredit, setMonthlyDebitAndCredit] = useState(null);
 
   function moreDetails(): any {
     moreDetailsRef.current.scrollBy({
@@ -32,4 +33,26 @@ export default function Home({ accessToken }: any) {
       </main>
     </>
   );
+}
+
+export async function getServerSideProps(context: any) {
+  const sandboxClientID = "c871240c-d971-4b74-9b13-4be5b3a27bd1";
+  const partyId = context.query.party_id;
+  const accessToken = context.query.access_token;
+  const fetchData = await fetch("http://localhost:3000/api/chartdata", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      clientId: sandboxClientID,
+      partyId: partyId,
+      accessToken: accessToken,
+    }),
+  });
+
+  const chartData = await fetchData.json();
+  console.log(chartData);
+
+  return { props: { chartData } };
 }
